@@ -1,0 +1,11 @@
+tunnel: laravel-tunnel
+credentials-file: /path/to/your/credentials.json
+
+ingress:
+  - hostname: yourdomain.com
+    service: http://localhost:8000
+  - hostname: yourdomain.com
+    service: http://localhost:5153
+    path: /
+    # originRequest:
+    #   path: /api  # or any other path you need for API requests  # or any other path you need for API requests
